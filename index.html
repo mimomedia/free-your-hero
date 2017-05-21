@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="assets/js/mimo-gp.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/mimo-gp.css" media="screen">
+		
+		<title>Free Your Hero Challenge</title>
+	</head>
+
+	<body>
+	<header>
+		<div class="mimo-container mimo-header">
+			<div id="mimo-top">
+				<h1>The <strong>Free your Hero</strong> Challenge</h1>
+				<p class="mimo-lead">Discover which kind of <strong>Activism Hero</strong> lives inside you, simply take the challenge. </p>
+			</div>
+		</div>
+	</header>
+		<!-- Quiz Container -->
+		<div class="mimo-container">
+			<div id="mimo-quiz">
+				<!-- Question 1 -->
+				<div class="card mimo-question">
+					<div class="mimo-question-title"><h2>1. Question 1 is ...</h2></div>
+					<div class="mimo-question-answers">
+						
+						<div><input id="mimo-radio-1" class="mimo-radio" onclick="mimoInit();" type="radio" name="q1" value="a"><label for="mimo-radio-1"><span></span> A</label></div>
+						<div><input id="mimo-radio-2" class="mimo-radio" onclick="mimoInit();" type="radio" name="q1" value="b"><label for="mimo-radio-2"><span></span> B</label></div>
+						<div><input id="mimo-radio-3" class="mimo-radio" onclick="mimoInit();" type="radio" name="q1" value="c"><label for="mimo-radio-3"><span></span> C</label></div>
+						<div><input id="mimo-radio-4" class="mimo-radio" onclick="mimoInit();" type="radio" name="q1" value="d"><label for="mimo-radio-4"><span></span> D</label></div>
+						
+					</div>
+				</div>
+				<!-- Question 2 -->
+				<div class="card mimo-question">
+					<div class="mimo-question-title"><h2>2. Question 2 is ...</h2></div>
+					<div class="mimo-question-answers">
+						<div><input id="mimo-radio-5" class="mimo-radio" onclick="mimoInit();" type="radio" name="q2" value="a"><label for="mimo-radio-5"><span></span> A</label></div>
+						<div><input id="mimo-radio-6" class="mimo-radio" onclick="mimoInit();" type="radio" name="q2" value="b"><label for="mimo-radio-6"><span></span> B</label></div>
+						<div><input id="mimo-radio-7" class="mimo-radio" onclick="mimoInit();" type="radio" name="q2" value="c"><label for="mimo-radio-7"><span></span> C</label></div>
+						<div><input id="mimo-radio-8" class="mimo-radio" onclick="mimoInit();" type="radio" name="q2" value="d"><label for="mimo-radio-8"><span></span> D</label></div>
+					</div>
+				</div>
+				<!-- Question 3 -->
+				<div class="card mimo-question">
+					<div class="mimo-question-title"><h2>3. Question 3 is ...</h2></div>
+					<div class="mimo-question-answers">
+						<div><input id="mimo-radio-9" class="mimo-radio" onclick="mimoInit();" type="radio" name="q3" value="a"><label for="mimo-radio-9"><span></span> A</label></div>
+						<div><input id="mimo-radio-10" class="mimo-radio" onclick="mimoInit();" type="radio" name="q3" value="b"><label for="mimo-radio-10"><span></span> B</label></div>
+						<div><input id="mimo-radio-11" class="mimo-radio" onclick="mimoInit();" type="radio" name="q3" value="c"><label for="mimo-radio-11"><span></span> C</label></div>
+						<div><input id="mimo-radio-12" class="mimo-radio" onclick="mimoInit();" type="radio" name="q3" value="d"><label for="mimo-radio-12"><span></span> D</label></div>
+					</div>
+				</div>
+				<!-- Question 4 -->
+				<div class="card mimo-question">
+					<div class="mimo-question-title"><h2>4. Question 4 is ...</h2></div>
+					<div class="mimo-question-answers">
+						<div><input id="mimo-radio-13" class="mimo-radio" onclick="mimoInit();" type="radio" name="q4" value="a"><label for="mimo-radio-13"><span></span> A</label></div>
+						<div><input id="mimo-radio-14" class="mimo-radio" onclick="mimoInit();" type="radio" name="q4" value="b"><label for="mimo-radio-14"><span></span> B</label></div>
+						<div><input id="mimo-radio-15" class="mimo-radio" onclick="mimoInit();" type="radio" name="q4" value="c"><label for="mimo-radio-15"><span></span> C</label></div>
+						<div><input id="mimo-radio-16" class="mimo-radio" onclick="mimoInit();" type="radio" name="q4" value="d"><label for="mimo-radio-16"><span></span> D</label></div>
+					</div>
+				</div>
+				<!-- Question 5 -->
+				<div class="card mimo-question">
+					<div class="mimo-question-title"><h2>5. Question 5 is ...</h2></div>
+					<div class="mimo-question-answers">
+						<div><input id="mimo-radio-17" class="mimo-radio" onclick="mimoInit();" type="radio" name="q5" value="a"><label for="mimo-radio-17"><span></span> A</label></div>
+						<div><input id="mimo-radio-18" class="mimo-radio" onclick="mimoInit();" type="radio" name="q5" value="b"><label for="mimo-radio-18"><span></span> B</label></div>
+						<div><input id="mimo-radio-19" class="mimo-radio" onclick="mimoInit();" type="radio" name="q5" value="c"><label for="mimo-radio-19"><span></span> C</label></div>
+						<div><input id="mimo-radio-20" class="mimo-radio" onclick="mimoInit();" type="radio" name="q5" value="d"><label for="mimo-radio-20"><span></span> D</label></div>
+					</div>
+				</div>
+			</div>
+			<!-- Quiz Container -->
+			
+			<!-- Quiz Results -->
+			<div id="mimo-bottom">
+				<div id="mimo-progress"><div id="mimo-progress-bar"></div></div>
+				<div id="mimo-result-bottom"></div>
+				<p>
+					<button id="mimo-restart" type="button" onclick="mimoRestart();">Start Again</button>
+					<button id="mimo-facebook" type="button" >Share</button>
+					<button id="mimo-twitter" type="button" >Tweet</button>
+					<button id="mimo-action"><a href="http://www.greenpeace.org/international/en/campaigns/climate-change/take_action/" target="_blank">Free your Hero</a></button>
+				</p>
+			</div>
+			<!-- Quiz Results -->
+		</div>
+	</body>
+</html>
