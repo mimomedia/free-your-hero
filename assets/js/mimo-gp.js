@@ -2,9 +2,10 @@ function mimoInit() {
 	"use strict"
     var results = [];
     // Get the container element
-    var container = document.getElementsByClassName('mimo-question');
-    var count = container.length;
-    for (i = 0; i < count; ++i) {
+    var container = document.getElementsByClassName('mimo-question'),
+    count = container.length,
+    i = 0;
+    for (i; i < count; ++i) {
     	// Find checked inputs values in each container
         var inputs = container[i].getElementsByTagName('input');
         for (var index = 0; index < inputs.length; ++index) {
@@ -23,8 +24,8 @@ function mimoInit() {
     	// Get the most repeated result in results array
         var repeated = {};
         var max = 0;
-        var result;
-        for (var n in results) {
+        var result,n;
+        for (n in results) {
             repeated[results[n]] = (repeated[results[n]] || 0) + 1;
             if (repeated[results[n]] > max) {
                 max = repeated[results[n]];
